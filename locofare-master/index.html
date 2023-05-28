@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locofare</title>
+    <!-- css stylesheet  -->
+  <link rel="stylesheet" href="style.css"> 
+   <!-- fontawesome -->
+<script src="https://kit.fontawesome.com/5d70e3f39f.js" crossorigin="anonymous"></script>
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+<!-- bootstrap  -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> -->
+<script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AnSuGAPVzMhU6iDaQz-zYDNYeRgtKyvj0vAZuOypBKDuVipJ56COUX4qnpkJUMJY' async defer></script>
+
+    <script src="rideapp.js"></script>
+</head>
+<body onload="getMap();loadMapScenario()">
+    <!-- menu bar -->
+    <div id="menu-bar">
+        <img class="boy" src="logo.png">
+    <div id="navigation-bar">
+       <a class="menu" href="#">Home</a>
+        <a class="menu" href="about.html">About Us</a>
+        <a class="menu" href="#faqs">FAQs</a>
+        <a class="menu" href="#contact">Contact Us</a>
+        <a class="menu" href="signIn.html">SignIn/SignUp</a>
+    </div></div>
+
+<!-- home page -->
+
+<div class="front_page">
+   <div class="travel">
+    <div class="option-bar"><div class="h"><img class="icon1" src="autoIcon.png">
+        <a class="option" href="#">Ride</a></div>
+        <div class="h seeMap"><img class="icon2" src="locate.png">
+        <a class="option" href="">See the map</a></div>
+        <div class="h"><img class="icon3" src="contribute.png">
+        <a class="option"  href="#contribute">contribute</a></div></div>
+      <hr>
+      <h1>Take an Auto</h1>
+    <!-- <span><form action="" method="" id="searchBoxContainer" > -->
+        <!-- <input type="text" name="from" class="searchBox" placeholder="From" autofocus>
+        <br>
+        <input type="text" name="to" class="searchBox1" placeholder="To">
+        <br>
+        <button type="submit" class="enter">Know your fare</button> -->
+        <form class="" action="/" method="post" id="searchBoxContainer">
+            <input type="text" name="place1" class="searchBox" id="" placeholder="form">
+            <input type="text" name="place2" class="searchBox1" id="" placeholder="to">
+            <button type="submit" class="enter">know the fare</button>
+        </form>
+    </span>
+</div>
+<!-- <div id="myMap" style="position:relative;width:400px;height:300px;"></div> -->
+<div class="info">
+    <!-- the price of the tavel is <%= price %> -->
+    <div id="myMap" class="hide" style="width:400px;height:300px;" onload="loadMapScenario()"></div>
+  </div>
+</div>
+ <!-- features -->
+ <div id="features">
+ <div class="p pl">
+    <img class="feat-img1" src="autowala-1.png">
+     <h2>To travel fair,Use Locofare!</h2>
+   
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, explicabo!</p>
+</div>
+ <div class="p pr">
+    <img class="feat-img2" src="map-on-phone-1.png">
+    <h2>Map for your guide.</h2>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, dicta!</p></div>
+ <div class="p pl pb">
+    <img class="feat-img3" src="pocket.jpg">
+    <h2>A ride suited  for you pocket.</h2>
+    
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, aliquam!</p></div>
+ <div class="p pr pb"> <img class="feat-img4" src="contri.jpg">
+    <h2>Contribute.</h2>
+   
+<p>orem ipsum dolor sit, amet consectetur adipisicing elit. Sed, asperiores!</p></div>
+   </div>
+
+
+
+   <div id="contribute">
+    <h1>Contribute</h1>
+    <h4>Help us know your town!</h4>
+    <input type="text" name=""class="loc1" id="" placeholder="place1">
+    <br>
+    <input type="text" name="" class="loc2" id="" placeholder="place1">
+    <br>
+    <input type="text" name="" class="price" id="" placeholder="Price">
+    <br>
+    <button class="request" type="submit">Request</button>
+</div>
+
+   <!-- FAQs  -->
+
+
+
+   <div id="faqs">
+    <div class="secleft"><h1>FAQs</h1>
+   <h3 class="faq">Question1</h3>
+   <h5>Ans1</h5>
+   <h3>Question1</h3>
+   <h5>Ans1</h5>
+   <h3>Question1</h3>
+   <h5>Ans1</h5></div>
+   <img class="faq-img" src="faq-img.png">
+  
+   </div>
+ <!------------------------ reviews------------------- -->
+<section id="reviews" >
+  
+    <h2>Your opinion Matters!</h2>
+    <h5>Rate your experience.</h5>
+    <form action="mailto:pritijohnes30gmail.com" method="get" enctype="text/plain" id="">
+    <div class="starBox">
+    <div class="star one"></div>
+    <div class="star two"></div>
+    <div class="star three"></div>
+    <div class="star four"></div>
+    <div class="star five"></div></div>
+    
+  </form>
+    <form>
+      <label>Write a review.</label>
+      <br>
+      <textarea rows="1" columns="80" placeholder="Type..."></textarea>
+    </form> 
+  
+  </section>
+
+<!-- ----------------------contact us------------------- -->
+<section id="contact">
+
+<div class=" container contact-me">
+<h3  class=touch style="font-family:'Montserrat', sans-serif;">Get In Touch</h3>
+<p class="p3">Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
+<a href="gmail.com" action="mailto:pritijohnes30gmail.com"><i class="fa fa-envelope-o" ></i></a>
+<i class="fa fa-phone"></i>
+<script >
+    document.querySelector(".seeMap").addEventListener("click",function(){
+        document.querySelector("#myMap").classList.toggle("show");
+        document.querySelector("#myMap").classList.toggle("hide");
+    });
+    document.querySelector(".enter").addEventListener("click",function(){
+        var map = new Microsoft.Maps.Map(document.querySelector("#myMap"), {
+    /* No need to set credentials if already passed in URL */
+    center: new Microsoft.Maps.Location(23.8066651,86.4480551),
+    zoom: 12
+});
+Microsoft.Maps.loadModule('Microsoft.Maps.Traffic', function () {
+    var manager = new Microsoft.Maps.Traffic.TrafficManager(map);
+    manager.show();
+});
+    });
+    
+    function getMap() {
+    map = new Microsoft.Maps.Map('#myMap', {
+        center: new Microsoft.Maps.Location(23.8066651, 86.4480551),
+        zoom: 15
+    });
+
+    Microsoft.Maps.loadModule('Microsoft.Maps.AutoSuggest', function () {
+        var manager = new Microsoft.Maps.AutosuggestManager({ map: map });
+        manager.attachAutosuggest('.searchBox', '#searchBoxContainer', selectedSuggestion);
+        var manager1 = new Microsoft.Maps.AutosuggestManager({ map: map });
+        manager1.attachAutosuggest('.searchBox1', '#searchBoxContainer', selectedSuggestion1);
+        console.log(manager.getOptions());
+    });
+}
+function selectedSuggestion(result) {
+    //Remove previously selected suggestions from the map.
+    // map.entities.clear();
+
+    //Show the suggestion as a pushpin and center map over it.
+    var pin = new Microsoft.Maps.Pushpin(result.location);
+    map.entities.push(pin);
+    map.setView({ bounds: result.bestView });
+    document.getElementById('addressLineTbx').value = result.address.addressLine || '';
+    p1  = result.address.addressLine;
+    
+    document.getElementById('cityTbx').value = result.address.locality || '';
+    if(p1===undefined)
+    p1 = result.address.locality;
+    document.getElementById('countyTbx').value = result.address.district || '';
+    document.getElementById('stateTbx').value = result.address.adminDistrict || '';
+    document.getElementById('postalCodeTbx').value = result.address.postalCode || '';
+    document.getElementById('countryTbx').value = result.address.countryRegion || '';
+   
+}
+ function selectedSuggestion1(result) {
+    //Remove previously selected suggestions from the map.
+    // map.entities.clear();
+
+    //Show the suggestion as a pushpin and center map over it.
+    var pin1 = new Microsoft.Maps.Pushpin(result.location);
+    map.entities.push(pin1);
+    map.setView({ bounds: result.bestView });
+    document.getElementById('addressLineTbx1').value = result.address.addressLine || '';
+    p2 =  result.address.addressLine;
+    document.getElementById('cityTbx1').value = result.address.locality || '';
+    document.getElementById('countyTbx1').value = result.address.district || '';
+    document.getElementById('stateTbx1').value = result.address.adminDistrict || '';
+    document.getElementById('postalCodeTbx1').value = result.address.postalCode || '';
+    document.getElementById('countryTbx1').value = result.address.countryRegion || '';
+    loca = p1+" "+p2;
+    console.log(p1+" "+p2);
+  
+
+    
+// ride1.save(); 
+}  
+
+
+
+
+
+</script>
+<script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AnSuGAPVzMhU6iDaQz-zYDNYeRgtKyvj0vAZuOypBKDuVipJ56COUX4qnpkJUMJY' async defer></script>
+<script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=AnSuGAPVzMhU6iDaQz-zYDNYeRgtKyvj0vAZuOypBKDuVipJ56COUX4qnpkJUMJY&callback=loadMapScenario' async defer></script> 
+<script type='text/javascript'>
+    function loadMapScenario() {
+        var map = new Microsoft.Maps.Map(document.getElementById('myMap'), {
+            /* No need to set credentials if already passed in URL */
+            center: new Microsoft.Maps.Location(23.8066651, 86.4480551),
+            zoom: 12
+        });
+        Microsoft.Maps.loadModule('Microsoft.Maps.Traffic', function () {
+            var manager = new Microsoft.Maps.Traffic.TrafficManager(map);
+            manager.show();
+        });
+        
+    }
+</script>   
+<script src="index.js"></script>
+</body>
+</html>

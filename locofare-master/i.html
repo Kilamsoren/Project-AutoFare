@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>autoFare</title>
+    <script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AnSuGAPVzMhU6iDaQz-zYDNYeRgtKyvj0vAZuOypBKDuVipJ56COUX4qnpkJUMJY' async defer></script>
+    <script src="index.js"></script>
+</head>
+<body onload="getMap()">
+    <form action="" method="" id="searchBoxContainer" >
+        <input type="text" name="from" class="searchBox" placeholder="FROM" autofocus>
+        <input type="text" name="to" class="searchBox1" placeholder="TO">
+        <button type="submit">Know your fare</button>
+    </form>
+    <!-- <p>this is the text</p> -->
+
+    <div id="myMap" style="position:relative;width:400px;height:300px;"></div>
+
+    <table class="addressForm">
+        <tr><td>Street Address:</td><td><input type="text" id="addressLineTbx"/></td></tr>
+        <tr><td>City:</td><td><input type="text" id="cityTbx"/></td></tr>
+        <tr><td>County:</td><td><input type="text" id="countyTbx"/></td></tr>
+        <tr><td>State:</td><td><input type="text" id="stateTbx"/></td></tr>
+        <tr><td>Zip Code:</td><td><input type="text" id="postalCodeTbx"/></td></tr>
+        <tr><td>Country:</td><td><input type="text" id="countryTbx"/></td></tr>
+    </table>
+</body>
+</html>

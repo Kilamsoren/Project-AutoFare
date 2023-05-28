@@ -1,0 +1,97 @@
+
+body{
+    margin:0;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-image: url("auto-boy.jpg");
+   background-position-x: right;
+   
+}
+select{
+width: 200.00px;
+height: 50.00px;
+border-radius: none;
+margin-left:4rem;
+
+}
+
+/* menubar */
+#menu-bar{
+    background-color: rgb(6, 6, 6);
+
+}
+
+#navigation-bar{
+    /* background-color:rgb(63, 62, 62); */
+    padding: 2rem 0 2rem 0;
+    float: right;
+}
+
+.menu{
+    color:rgb(249, 246, 246);
+    padding: 0 1rem 0 1rem;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+/* login page  */
+.logo{
+    height:4rem;
+    width:4rem;
+    padding: 0.5rem 0 0 1rem;
+}
+#login{
+    height: 200px;
+    width:300px;
+    background-color: #ffff; 
+    margin-left: 15%;
+    margin-top: 15%;
+    opacity: 0.8;
+    border-radius: 5%;
+}
+#login a{
+ text-decoration: none;
+ color: black;
+ font-family: 'Montserrat', sans-serif;
+ font-weight: 800;
+}
+.heading_for_sign_up{
+ padding-top:1rem;
+ /* padding-left: 10rem; */
+ text-decoration:none;
+ text-align: center;
+/* color:white; */
+font-family: 'Montserrat', sans-serif;
+}
+.head{
+    height: 100px;
+width: 500px;
+background-color: black;
+}
+.sign{
+    display:inline-block;
+    padding-top: 2.5rem;
+    padding-bottom: 0.5rem;
+    
+}
+.s1{
+    border-right:solid 0.01rem;
+    
+    padding-left: 90px;
+    padding-right: 40px;
+    background-color: rgb(253, 254, 251);
+    opacity:none;
+}
+.s2{
+padding-left: 40px;
+border-bottom: solid 0.01rem;
+border-length:68px;
+padding-right: 105px;
+margin-left:0
+/* background-color: ; */
+}
+
+
+
+/* ******************8about us ******************* */

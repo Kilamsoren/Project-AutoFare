@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign</title>
+     <!-- css stylesheet  -->
+  <link rel="stylesheet" href="styleSignUp.css"> 
+  <!-- fontawesome -->
+<script src="https://kit.fontawesome.com/5d70e3f39f.js" crossorigin="anonymous"></script>
+
+ <!-- google fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+</head>
+<style>
+    h3{
+    margin-left: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+    #login{
+    /* height: 500px; */
+    width:500px;
+    background-color: #ffff; 
+    margin-left: 30%;
+    margin-top: 2%;
+    opacity: 0.8;
+    border:solid 2px;
+    border-radius: 5%;
+
+}
+#login a{
+ text-decoration: none;
+ color: black;
+ font-family: 'Montserrat', sans-serif;
+ font-weight: 800;
+}
+.head{
+    height: 100px;
+width: 500px;
+background-color: black;
+}
+.sign{
+    display:inline-block;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    text-align: center;
+    
+}
+.s1{
+    /* border-right:solid 0.01rem; */
+    
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: #ffff;
+    opacity:none;
+    margin: 2rem;
+    /* border-radius: 60px; */
+}
+.s2 h2{
+    color: #FED049;
+}
+.s2{
+    padding-left: 2.5rem;
+    /* border-bottom: solid 0.01rem;
+    border-length:68px; */
+    padding-right: 2.5rem;
+    margin-left:0;
+    background-color:black;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font-weight: 900;
+}
+.travel{
+    /* display: none; */
+    position: absolute;
+left: 2rem;
+    height: 420px;
+    width: 480px;
+    /* position: absolute; */
+background-color: rgb(254, 254, 254);
+opacity: 0.85;
+
+/* margin-bottom: 20px; */
+margin-top: 20px;
+box-shadow: 1px 2px 10px 4px #646363;
+z-index: 1;
+padding: 0,2rem;
+}
+.searchBox {
+    margin: 0 2rem ;
+    border: none;
+    border-radius: 0;
+    height: 3rem;
+    width: 400px;
+    background-color: #d1cfcf;
+}
+.searchBox1{
+    margin: 0 2rem ;
+    border: none;
+    border-radius: 0;
+    height: 3rem;
+    width: 400px;
+    background-color: #d4cfcf;
+}
+.enter{
+    margin: 0 2rem ;
+    width: 7rem;
+    height: 3rem;
+    background-color: black;
+    color: #FED049;
+    border-style: none;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+</style>
+<body>
+<div id="login">
+    <!-- <div class="heading_for_sign_up"><h1>Sign Up</h1></div> -->
+    <div class="sign s1"><a href="signIn.html"><h2>Sign In</h2></a></div>
+    <div class="sign s2"><a href="signUp.html"><h2>Sign Up</h2></a></div>
+    <h3>First Name</h3>
+    <input type="text" name="to" class="searchBox1" placeholder="First Name" autofocus>
+    <br>
+    <h3>Last Name</h3>
+    <input type="text" name="to" class="searchBox1" placeholder="Last Name" autofocus>
+    <br>
+    <h3>Make a User ID.</h3>
+    <input type="text" name="to" class="searchBox1" placeholder=" a new UserID" autofocus>
+    <br>
+    <h3>Confirm User ID.</h3>
+    <input type="text" name="to" class="searchBox1" placeholder=" confirm UserID" autofocus>
+    <br>
+    <h3>Email Adress.</h3>
+        <input type="email" name="from" class="searchBox" placeholder="Email" autofocus>
+        <br>
+        <button type="submit" class="enter">Continue</button>
+    
+</div>
+</body>
+</html>
